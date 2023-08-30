@@ -32,7 +32,9 @@ module.exports = {
       filename: "about.html",
       template: "./about.html",
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "styles/[name]-[hash].css",
+    }),
   ],
 
   optimization: {
@@ -50,6 +52,9 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+        generator: {
+          filename: "styles/[name]-[hash][ext][query]",
+        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
