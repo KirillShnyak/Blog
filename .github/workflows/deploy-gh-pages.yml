@@ -1,7 +1,8 @@
 name: Deploy to GithubPages
 
 on: push
-
+permissions:
+  contents: write
 jobs:
   deploy-to-gh-pages:
     runs-on: ubuntu-latest
