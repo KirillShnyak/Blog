@@ -1,0 +1,143 @@
+@import "reset";
+:root {
+  font-size: 16px;
+  line-height: 1.2;
+}
+$header-color: rgb(255, 255, 255);
+$title-size: 88px;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $header-color;
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav_ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav_ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin: 10px;
+  align-items: center;
+}
+
+.main_section_index {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../pictures/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    font-size: $title-size;
+  }
+  p {
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 90%;
+    border: 2px solid;
+  }
+  img {
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+.feedback_title {
+  font-size: $title-size;
+  // float: right;
+}
+.feedback_input {
+  display: flex;
+  align-items: center;
+  // margin-top: 56px;
+  height: 80vh;
+  img {
+    position: absolute;
+    border: 2px solid;
+    float: right;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -1;
+    // margin-top: 40%;
+  }
+  input {
+    width: 100%;
+    height: 100px;
+    text-align: start;
+    // border-color: #0e0f0f;
+  }
+}
+
+.about__main_section {
+  display: flex;
+}
+.about__main_section__text {
+  width: 50%;
+  height: 100vh;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  font-size: 40px;
+  p {
+    max-width: 400px;
+  }
+}
+.about__main_section__text:before {
+  content: " ";
+  background: #0e0f0f;
+  width: 50px;
+  height: 7px;
+  margin: 30px;
+}
+.about__main_section__img {
+  height: 100vh;
+  width: 50%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog_article {
+  display: flex;
+  border: 1px solid rgb(43, 41, 41);
+  height: 350px;
+  margin-top: 30px;
+  align-items: center;
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blog_article__text {
+    width: 50%;
+    margin-left: 10px;
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
