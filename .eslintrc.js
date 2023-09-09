@@ -11,5 +11,19 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "import/prefer-default-export": "off",
+    "max-len": [
+      "error",
+      {
+        ignoreComments: true,
+        code: 200,
+      },
+    ],
+    "no-plusplus": "off",
+    "no-alert": "off",
+    "consistent-return": "off",
+    eqeqeq: "off",
+    "no-param-reassign": "off",
+  },
 };

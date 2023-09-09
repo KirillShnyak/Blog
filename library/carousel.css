@@ -1,0 +1,19 @@
+.carousel_slide {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  border: 2px solid;
+}
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.carousel-item {
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
