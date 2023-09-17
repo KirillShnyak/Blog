@@ -1,4 +1,4 @@
-.carousel_slide {
+.carousel_slider {
   position: relative;
   margin: auto;
   width: 100%;
@@ -6,14 +6,59 @@
   height: 500px;
   border: 2px solid;
 }
+
+.carousel-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3000ms linear;
+}
+
+.carousel-wrapper > .carousel-item:first-child {
+  opacity: 1;
+}
+
+.carousel-nav {
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -32px;
+  z-index: 1000;
+}
+
+.carousel-nav button {
+  border: none;
+  display: block;
+  width: 64px;
+  height: 62px;
+  cursor: pointer;
+  background-color: black;
+  font-size: 40px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 16px;
+  border-radius: 30px;
+}
+
 .carousel-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.carousel-item {
-  display: none;
+
+.prev {
+  float: left;
 }
-.carousel-item.active {
-  display: block;
+
+.next {
+  float: right;
 }

@@ -25,5 +25,7 @@ module.exports = {
     "consistent-return": "off",
     eqeqeq: "off",
     "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
   },
 };
