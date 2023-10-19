@@ -1,4 +1,4 @@
-class SlideShow {
+export default class SlideShow {
   constructor(element) {
     this.el = document.querySelector(element);
     this.init();
@@ -44,6 +44,7 @@ class SlideShow {
     }
     this.slides.forEach((element, key) => {
       element.style.opacity = key == this.index ? 1 : 0;
+      console.log(i);
     });
   }
 
